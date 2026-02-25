@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AndreSbro03.github.io/download-suvenir",
+  "homepage": "https:/sbro.dev/download-suvenir",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
