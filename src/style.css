@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'TANSONGBIRD';
+  src: url('/assets/fonts/TANSONGBIRD.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-glass-bg backdrop-blur-md border border-glass-border;
+  }
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 font-sans overflow-x-hidden selection:bg-pastel-pink selection:text-white;
+}
+
+/* Base App Bar styles */
+#app-bar {
+  @apply fixed top-0 w-full z-50 transition-all duration-300 px-6 py-4 flex justify-between items-center glass rounded-b-2xl mx-auto max-w-7xl inset-x-0 mt-2;
+}
+
+/* Hide scrollbar for feeds */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
