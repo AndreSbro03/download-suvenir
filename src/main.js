@@ -19,7 +19,7 @@ function preloadFrames(startIdx) {
     if (!preloadedImages[idx]) {
       const img = new Image();
       const frameNum = String(idx).padStart(3, '0');
-      img.src = `/assets/frames/ezgif-frame-${frameNum}.jpg`;
+      img.src = `assets/frames/ezgif-frame-${frameNum}.jpg`;
       preloadedImages[idx] = img;
     }
   }
@@ -30,7 +30,7 @@ function updateFrame() {
   if (currentFrame > totalFrames) currentFrame = 1;
 
   const frameNum = String(currentFrame).padStart(3, '0');
-  phoneFrame.src = `/assets/frames/ezgif-frame-${frameNum}.jpg`;
+  phoneFrame.src = `assets/frames/ezgif-frame-${frameNum}.jpg`;
 
   // Preload upcoming frames
   preloadFrames(currentFrame);
